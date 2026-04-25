@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seller Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="app.js"></script>
+</head>
+
+<body class="bg-green-50 p-4">
+
+  <h1 class="text-xl font-bold mb-4">Seller Dashboard</h1>
+
+  <input id="name" placeholder="Product Name" class="border p-3 w-full mb-2 rounded">
+  <input id="price" placeholder="Price" class="border p-3 w-full mb-2 rounded">
+
+  <button onclick="addProduct()"
+    class="bg-green-600 text-white w-full py-3 rounded-lg">
+    Add Product
+  </button>
+
+  <h2 class="text-lg font-bold mt-6">Orders</h2>
+  <div id="orders" class="grid grid-cols-1 gap-3 mt-2"></div>
+
+</body>
+</html>
